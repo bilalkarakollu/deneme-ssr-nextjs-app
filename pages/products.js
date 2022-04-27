@@ -1,9 +1,16 @@
 import React from 'react'
-import Link from 'next/dist/client/link'
+import Link from 'next/link';
+import Head from "next/head"
+
 const Products = ({ data }) => {
 
     return (
         <div>
+            <Head>
+                <title>Products List</title>
+                <meta name="description" content="Products List" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <div>
                 <Link href={'/'}>
                     <a>Home</a>
