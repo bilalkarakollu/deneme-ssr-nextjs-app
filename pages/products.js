@@ -26,7 +26,7 @@ const Products = ({ data }) => {
     )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
     // Fetch data from external API
     const res = await fetch(`https://fakestoreapi.com/products`)
     const data = await res.json()
